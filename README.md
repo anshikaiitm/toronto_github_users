@@ -3,8 +3,11 @@ Toronto GitHub Users Data Analysis
 This repository contains data on GitHub users based in Toronto who have over 100 followers, along with details about their public repositories. The project involves analyzing user profiles and repository information to uncover trends that could guide developers in building a stronger presence on GitHub.
 
 Summary
+
 1.Data Collection: Data was scraped using the GitHub API, focusing on user profiles in Toronto with over 100 followers. The data was stored in users.csv and repositories.csv files, capturing detailed user and repository metrics.
+
 2.Findings: A key insight from the analysis is the limited correlation between the word count of a user's bio and their follower count. While bio content might add context, other factors seem more influential in attracting followers.
+
 3.Recommendation: Developers looking to grow their followers on GitHub should focus on quality contributions and engaging repositories, as these likely play a more significant role than profile bios alone.
 
 Files
