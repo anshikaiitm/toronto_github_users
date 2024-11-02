@@ -14,37 +14,38 @@ Files
 
 users.csv: This file contains information about each user, including:
 
-login: GitHub user ID.
-name: Full name.
-company: Workplace, cleaned and standardized to uppercase.
-location: User location, focused on Toronto-based users.
-email: Contact email.
-hireable: Whether the user is open to hiring opportunities (formatted in lowercase).
-bio: A brief description of the user.
-public_repos, followers, following: Public repository count, follower count, and following count.
+login: GitHub user ID,
+name: Full name,
+company: Workplace, cleaned and standardized to uppercase,
+location: User location, focused on Toronto-based users,
+email: Contact email,
+hireable: Whether the user is open to hiring opportunities (formatted in lowercase),
+bio: A brief description of the user,
+public_repos, followers, following: Public repository count, follower count, and following count,
 created_at: Account creation date.
 
 repositories.csv: Contains each user's public repository information:
 
-login: GitHub user ID (owner of the repository).
-full_name: Repository name.
-created_at: Repository creation date.
-stargazers_count, watchers_count: Count of stars and watchers.
-language: Main language of the repository.
-has_projects, has_wiki: Boolean values indicating project and wiki features (formatted in lowercase).
+login: GitHub user ID (owner of the repository),
+full_name: Repository name,
+created_at: Repository creation date,
+stargazers_count, watchers_count: Count of stars and watchers,
+language: Main language of the repository,
+has_projects, has_wiki: Boolean values indicating project and wiki features (formatted in lowercase),
 license_name: Repository license.
 
 README.md: Overview of the project, findings, and recommendations.
-
 
 Code(gitscrap.py and analysis.py): The Python code used to scrape the data and run analyses is included to allow reproducibility and further exploration.
 
 Code for project questions(1 to 16):Codes written to answer the questions asked in the project.
 
 Methodology
+
 Data Scraping: A Python script was used to interact with the GitHub API, pulling data for users meeting the location and follower criteria. Each user’s public repositories were retrieved and saved, with adjustments made to standardize formatting for ease of analysis.
 
 Data Cleaning: Company names were stripped of leading @ symbols and converted to uppercase. Boolean fields such as hireable, has_projects, and has_wiki were standardized to lowercase (true, false).
+
 Analysis: The project includes a basic regression analysis to explore the relationship between bio word count and follower count. Despite a common assumption that longer bios may attract more followers, results indicated a weak correlation.
 
 Further Analysis and Insights
