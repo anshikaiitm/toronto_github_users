@@ -36,7 +36,10 @@ license_name: Repository license.
 
 README.md: Overview of the project, findings, and recommendations.
 
-Code: The Python code used to scrape the data and run analyses is included to allow reproducibility and further exploration.
+
+Code(gitscrap.py and analysis.py): The Python code used to scrape the data and run analyses is included to allow reproducibility and further exploration.
+
+Code for project questions(1 to 16):Codes written to answer the questions asked in the project.
 
 Methodology
 Data Scraping: A Python script was used to interact with the GitHub API, pulling data for users meeting the location and follower criteria. Each user’s public repositories were retrieved and saved, with adjustments made to standardize formatting for ease of analysis.
